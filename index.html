@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bundus-Kitchen">
+    <meta name="author" content="Lamo30">
+
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="icon" href="icons/logo_bundus_fixed.svg">
+
+    <link rel="preconnect" href="https://fonts.googleleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;family=Forum&display=swap">
+
+    <title>Bundus-Kitchen</title>
+
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <link rel="preload" as="image" href="images/hero-slider-1.jpg">
+    <link rel="preload" as="image" href="images/hero-slider-2.jpg">
+    <link rel="preload" as="image" href="images/hero-slider-3.jpg">
+</head>
+
+<body id="top">
+    <div class="preload" data-preload>
+        <div class="circle"></div>
+        <p class="text">Bundus</p>
+    </div>
+
+    <div class="topbar">
+        <div class="container">
+          
+            <address class="topbar-item">
+                <div class="icon">
+                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">
+                    Tombia street GRA. Port Harcourt, Rivers State. Nigeria.
+                </span>
+            </address>
+
+            <div class="separator"></div>
+
+            <div class="topbar-item item2">
+                <div class="icon">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">Daily : 8.00am to 10.00pm</span>
+            </div>
+
+            <a href="tel:(+234)81-23456-789" class="topbar-item">
+                <div class="icon">
+                    <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">(+234)81 23 456 789</span>
+            </a>
+
+            <div class="separator"></div>
+
+            <a href="mailto:booking@bundus.com" class="topbar-item">
+                <div class="icon">
+                    <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">(+234)81-23456-789</span>
+            </a>
+        </div>
+    </div>
+
+    <header class="header data-header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="icons/logo_bundus_fixed.svg" alt="Bundus-Home">
+            </a>
+
+            <nav class="navbar" data-navbar>
+                <button class="close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <a href="#" class="logo">
+                    <img src="icons/logo_bundus_fixed.svg" alt="Bundus-Home">
+                </a>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="#home" class="navbar-link hover-underline active">
+                            <div class="separator"></div>
+
+                            <span class="span">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#menus" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Menus</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#about" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">About Us</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link hover-underline ">
+                            <div class="separator"></div>
+
+                            <span class="span">Our Chefs</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link hover-underline ">
+                            <div class="separator"></div>
+
+                            <span class="span">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="text-center">
+                    <p class="headline-1 navbar-title">Visit Us</p>
+ 
+                    <address class="body-4">
+                       Tombia street GRA. <br>
+                        Port Harcourt, Rivers State. <br> Nigeria.
+                    </address>
+
+                    <p class="body-4 navbar-text">
+                        Open: 8.30 am - 4.30 pm
+                    </p>
+
+                    <a href="mailto:booking@bundus.com" class="sidebar-link">
+                        booking@bundus.com
+                    </a>
+
+                    <div class="separator"></div>
+
+                    <p class="contact-label">
+                        Booking Request
+                    </p>
+
+                    <a href="tel:(+234)81 23 456 789" class="body-1 contact-number hover-underline">(+234)81-23456-789</a>
+                </div>
+            </nav>
+
+            <a href="#" class="btn btn-secondary">
+                <span class="text text-1">Find A Table</span>
+
+                <span class="text text-2" aria-hidden="true">Find A Table</span>
+            </a>
+
+            <buton class="nav-open-btn" aria-label="opeb menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </buton>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <section class="hero text-center" aria-label="home" id="home">
+
+                <ul class="hero-slider" data-hero-slider>
+
+                    <li class="slider-item active" data-hero-slider-item>
+
+                        <div class="slider-bg">
+                            <img src="images/hero-slider-1.jpg" alt="" class="img-cover" width: 1880; height: 950;>
+                        </div>
+
+                        <p class="label-2 section-subtitle slider-reveal">
+                            Organic & Intercontinental
+                        </p>
+
+                        <h1 class="display-1 hero-title slider-reveal">
+                            For the love <br> of delicious meals
+                        </h1>
+
+                        <p class="body-2 hero-text slider-reveal">
+                            Bring along friends & family to satisfy delusional cravings 
+                        </p>
+
+                        <a href="#" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">
+                               View Our Menu
+                            </span>
+
+                            <span class="text text-2" aria-hidden="true">View Our Menu</span>
+                        </a>
+                    </li>
+
+                    <li class="slider-item active" data-hero-slider-item>
+
+                        <div class="slider-bg">
+                            <img src="images/hero-slider-2.jpg" alt="" class="img-cover">
+                        </div>
+
+                        <p class="label-2 section-subtitle slider-reveal">
+                            memory lasting 
+                        </p>
+
+                        <h1 class="display-1 hero-title slider-reveal">
+                            Cuisines motivated by <br> utmost satisfaction 
+                        </h1>
+
+                        <p class="body-2 hero-text slider-reveal">
+                            Unique & Organically prepared
+                        </p>
+
+                        <a href="#" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">
+                               View Our Menu
+                            </span>
+
+                            <span class="text text-2" aria-hidden="true">View Our Menu</span>
+                        </a>
+                    </li>
+
+                    <li class="slider-item active" data-hero-slider-item>
+
+                        <div class="slider-bg">
+                            <img src="images/hero-slider-3.jpg" alt="" class="img-cover">
+                        </div>
+
+                        <p class="label-2 section-subtitle slider-reveal">
+                            amazing & delicious
+                        </p>
+
+                        <h1 class="display-1 hero-title slider-reveal">
+                            Where every spoon <br>
+                            is a mysery
+                        </h1>
+
+                        <p class="body-2 hero-text slider-reveal">
+                            Bring along friends & family to satisfy delusional cravings 
+                        </p>
+
+                        <a href="#" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">
+                               View Our Menu
+                            </span>
+
+                            <span class="text text-2" aria-hidden="true">View Our Menu</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+                    <ion-icon name="chevron-back"></ion-icon>
+                </button>
+
+                <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                </button>
+
+                <a href="#" class="hero-btn has-after">
+                    <img src="images/hero-icon.png" alt="booking icon">
+
+                    <span class="label-2 text-center span">Book a Table</span>
+                </a>
+            </section>
+
+            <section class="section service bg-black-10 text-center" aria-label="service">
+                <div class="container"></div>
+            </section>
+        </article>
+    </main>
+</body>
+</html> 
