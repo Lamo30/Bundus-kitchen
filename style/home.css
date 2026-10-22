@@ -479,10 +479,17 @@ body.loaded{
     height: 50;
 }
 
-.slider-bg img /* .img-cover */{
+.img-cover{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.section{
+    position: relative;
+    padding: 100px;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .section-subtitle {
@@ -490,7 +497,7 @@ body.loaded{
     color: #e4c590;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.3em /* 0.4em*/;
+    letter-spacing: /* 0.3em */ 0.4em;
     margin-block-end: 12px;
 }
 
@@ -500,6 +507,61 @@ body.loaded{
     width: 100px;
     margin-inline: auto;
     margin-block-start: 5px;
+}
+
+.service .container {
+    max-width: 420px;
+    margin-inline: auto;
+}
+
+.bg-black-10 {
+    background-color: #0e0d0c;
+}
+
+.grid-list {
+    display: grid;
+    gap: 40px;
+    /* grid-template-columns: 1fr 1fr; */
+}
+
+.hover\:shine {
+    position: relative;
+}
+
+.hover\:shine::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(to right, transparent 0%, #fff6 100%);
+    transform: skewX(-0.08turn) translateX(-180%);
+}
+
+.hover\:shine:is(:hover, :focus-within)::after {
+    transform: skewX(-0.08turn) translateX(275%);
+    transition: 1000ms ease;
+}
+
+.img-holder {
+    aspect-ratio: 285 / 336;
+    background-color: #212121;
+    overflow: hidden;
+}
+
+.btn-text {
+    color: #e4c590;
+    padding-block-end: 4px;
+    margin-inline: auto;
+    text-transform: uppercase;
+    letter-spacing:0.2em;
+    font-weight: 700;
+    transition: 250ms ease;
+}
+
+.btn-text:is(:hover, :focus-visible) {
+    color: #ffffff;
 }
 
 .btn{
@@ -570,6 +632,10 @@ body.loaded{
 
 .has-before::before, .has-after {
     content:  "";
+    position: absolute;
+}
+.has-after::after {
+    content: "";
     position: absolute;
 }
 .her.hero .slider-btn {
@@ -654,8 +720,6 @@ body.loaded{
     transform: scale(0.6);
 }
 
-
-
 .hero-btn img{
     width: 48;
     height: 48;
@@ -713,3 +777,136 @@ body.loaded{
 .hero .slider-item.active .btn {
     animation-delay: 2s;
 }
+
+.shape {
+    display: none;
+    position: absolute;
+    max-width: max-content;
+    z-index: -1;
+}
+
+.service .section-title {
+    margin-block-end: 16px;;
+}
+
+.service .section-text {
+    margin-block-end: 40px;
+}
+
+.service-card {
+    overflow: hidden;
+}
+
+.service-card .has-before{
+    margin-block-end: 26px;
+    z-index: 1;
+    padding-block: 30px;
+}
+
+.service-card .has-before::before{
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 100%;
+    background-image: url('../icons/img-pattern.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    transition: 500ms ease;
+    transition-delay: 0;
+    z-index: -1;
+    will-change: transform;
+}
+
+.service-card:is(:hover, :focus-within) .has-before::before {
+    transform: rotateY(0.5turn) translateX(50%);
+    transition-delay: 300ms;
+}
+
+.service-card .card-banner {
+    transition: 500ms ease;
+}
+
+.service-card:is(:hover, :focus-within) .card-banner {
+    transform: scale(1.05);
+}
+
+.service .card-title {
+    margin-block-end: 12px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.about .section-text {
+    margin-block: 15px 30px;
+} 
+
+.about .btn {
+    margin-inline: auto;
+    margin-block-start: 26px;
+}
+
+.about .container {
+    display: grid;
+    gap: 120px;
+}
+
+.about-banner {
+    position: relative;
+    margin-block-end: 120px;
+}
+
+.about-banner > .w-100 {
+    padding-inline-start: 50px;
+}
+
+.about .abs-img {
+    position: absolute;
+}
+
+.about .abs-img::before {
+    z-index: -1;
+}
+
+.about .abs-img-1 {
+    bottom: -120px;
+    left: 0;
+    width: 150px;
+    padding-block: 50px;
+}
+
+.about .abs-img-2 {
+    top: -65px;
+    right: 0;
+    overflow: hidden;
+}
+
+.about .abs-img-1::before {
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    background-image: url('../icons/img-pattern.svg');
+    background-repeat: repeat;
+}
+
+.about .abs-img-2::before{
+    inset: 0;
+    background-image: url('../images/badge-2-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: rotate360 15s linear infinite;
+}
+
+/* ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+} */
