@@ -48,7 +48,7 @@ body.nav-active {
     display: grid;
     justify-items: center;
     place-content: center;
-    transition: 500ms ease;
+    transition: 250ms ease;
 }
 
 .preload > * {
